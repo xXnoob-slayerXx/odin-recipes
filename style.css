@@ -1,0 +1,23 @@
+.gradient-text
+{
+    background-image: 
+    linear-gradient(90deg,red,blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.fancy-hyperlinks
+{
+    text-decoration: none;
+    font-weight: 900; 
+    background-image: linear-gradient(90deg,red,blue);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;  /* not setting this to no-repeat will make my gradient flow behind my text repetetively */
+    background-position: left bottom; /* not setting this to left bottom will set the gradient location automatically to top left... above my text */
+    transition: background-size 300ms ease; /* not setting this will make my gradient instantaneous.. the 300ms delay is suitable */
+
+}
+.fancy-hyperlinks:hover
+{
+    background-size: 100% 3px; /*final product*/
+}
